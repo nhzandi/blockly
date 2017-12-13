@@ -360,8 +360,8 @@ Blockly.WorkspaceSvg.prototype.createDom = function(opt_backgroundClass) {
   if (opt_backgroundClass) {
     /** @type {SVGElement} */
     this.svgBackground_ = Blockly.utils.createSvgElement('rect',
-        {'height': '100%', 'width': '100%', 'class': opt_backgroundClass},
-        this.svgGroup_);
+        {'height': '100%', 'width': '100%', 'rx': '25', 'ry': '25', 'class': opt_backgroundClass},
+        this.svgGroup_);  //border radius for background rectangle
 
     if (opt_backgroundClass == 'blocklyMainBackground' && this.grid_) {
       this.svgBackground_.style.fill =

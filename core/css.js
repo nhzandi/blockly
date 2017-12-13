@@ -118,6 +118,7 @@ Blockly.Css.CONTENT = [
     'overflow: hidden;',  /* IE overflows by default. */
     'position: absolute;',
     'display: block;',
+    'border-radius: 20px',
   '}',
 
   '.blocklyWidgetDiv {',
@@ -400,8 +401,8 @@ Blockly.Css.CONTENT = [
   '}',
 
   '.blocklyMainBackground {',
-    'stroke-width: 1;',
-    'stroke: #c6c6c6;',  /* Equates to #ddd due to border being off-pixel. */
+    'stroke-width: 4;',
+    'stroke: #45bad9;',  /* Equates to #ddd due to border being off-pixel. */
   '}',
 
   '.blocklyMutatorBackground {',
@@ -411,8 +412,8 @@ Blockly.Css.CONTENT = [
   '}',
 
   '.blocklyFlyoutBackground {',
-    'fill: #ddd;',
-    'fill-opacity: .8;',
+    'fill: #525a67!important;',
+    'fill-opacity: .9!important;',
   '}',
 
   '.blocklyTransparentBackground {',
@@ -512,16 +513,21 @@ Blockly.Css.CONTENT = [
 
   /* Category tree in Toolbox. */
   '.blocklyToolboxDiv {',
-    'background-color: #ddd;',
+    'background-color: #fff;',
     'overflow-x: visible;',
     'overflow-y: auto;',
     'position: absolute;',
     'z-index: 70;', /* so blocks go under toolbox when dragging */
     '-webkit-tap-highlight-color: transparent;', /* issue #1345 */
+    'border-radius: 20px;',
+    'stroke: #ddd;',
+    'stroke-width: 4px;',
+    'border: 1px solid rgba(0,0,0,.3);',
   '}',
 
   '.blocklyTreeRoot {',
     'padding: 4px 0;',
+    'margin-top: 10px',
   '}',
 
   '.blocklyTreeRoot:focus {',
@@ -529,9 +535,10 @@ Blockly.Css.CONTENT = [
   '}',
 
   '.blocklyTreeRow {',
-    'height: 22px;',
-    'line-height: 22px;',
-    'margin-bottom: 3px;',
+    'height: 33px;',
+    'line-height: 33px;',
+    // 'margin-bottom: 3px;',
+    // 'margin-top: 3px;',
     'padding-right: 8px;',
     'white-space: nowrap;',
   '}',
