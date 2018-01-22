@@ -82,7 +82,7 @@ var profile = {
     description: "Arduino Mega-compatible board"
     //53 digital
     //15 analog
-  },
+  }
 };
 //set default profile to arduino standard-compatible board
 profile["default"] = profile["arduino"];
